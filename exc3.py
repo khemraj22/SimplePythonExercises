@@ -1,0 +1,13 @@
+"""
+Define a function that computes the length of a given list or string. (It is true that Python has the len() function built in, but writing it yourself is nevertheless a good exercise.)
+"""
+
+def str_len(s):
+    count = 0
+    for c in s:
+        count += 1
+        
+    return count    
+        
+print str_len(u"String length15")        
+    

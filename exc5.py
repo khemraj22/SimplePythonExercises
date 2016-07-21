@@ -1,0 +1,16 @@
+#For example, translate("this is fun") should return the string "tothohisos isos fofunon".
+
+def translate(s):
+    t = ""
+    for c in s:    
+        if c not in " ":
+            if c not in "AEIOUaeiou":
+                t += c+"o"+c
+            else:
+                t += c
+        else:
+            t += " "
+    return t
+        
+print translate("One tow three t")        
+    
