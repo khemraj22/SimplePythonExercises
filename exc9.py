@@ -12,6 +12,6 @@ def is_member(n, l):
     return False
         
 a_list = ["ADF","abc", "bgg"] #[1,3,4,5]
-a_value = "abc"
+a_value = "abc" #2
 
 print is_member(a_value, a_list)
