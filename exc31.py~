@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+Implement the higher order functions map(), filter() and reduce(). (They are built-in but writing them yourself may be a good exercise.)
+"""
+
+def translate(eng_words):
+    swedish_dict = {"merry":"god", "christmas":"jul", "and":"och", "happy":"gott", "new":"nytt", "year":"år"}   
+
+    return map(lambda x: swedish_dict[x], eng_words)
+
+
+print translate(["merry", "christmas"])

@@ -15,29 +15,14 @@ def make_3sg_form(str):
     
     if str.endswith("y"):
         t = str[:-1]+"ies"
-    else:
+    else: 
         for s in suffics:
             if str.endswith(s):
                 #t = str.replace(s, "ies")   
-                t = str+"es"           
+                t = str+"es" 
+                          
     return t
     
 print make_3sg_form("chanch")
 
-"""
-def singular(s):
-    suffics = ['o', 'ch', 's', 'sh', 'x', 'z']
-    
-    if s.endswith("y"):
-        return s[:-1]+"ies"
-        
-    else:
-        for s in suffics:
-            if s.endswith(s):
-                t = s.replace(s, "ies")      
-    
-    return t
-    
-print singular("yaacy")
 
-"""

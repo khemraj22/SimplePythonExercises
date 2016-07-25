@@ -15,11 +15,12 @@ def make_3sg_form(str):
     
     if str.endswith("y"):
         t = str[:-1]+"ies"
-    else:
+    else: 
         for s in suffics:
             if str.endswith(s):
                 #t = str.replace(s, "ies")   
-                t = str+"es"           
+                t = str+"es" 
+                          
     return t
     
 print make_3sg_form("chanch")
